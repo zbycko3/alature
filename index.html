@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang=ru>
+
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+    <title></title>
+    <link rel='stylesheet' type='text/css' href='lend/css/style_new.css' />
+    <link rel='stylesheet' type='text/css' href='lend/css/style_media.css' />
+    <script src='lend/js/jquery.js'></script>
+    <script src='lend/js/jqueryui.js'></script>
+
+    <style>
+        .taro_card {
+            background: url(./lend/112.png) top left no-repeat;
+            width: 65px;
+        }
+        
+        .opis_right {
+            width: 466px
+        }
+    </style>
+
+
+
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=yes' />
+    <script src='lend/js/resizemob.js'></script>
+</head>
+
+<body itemscope='' itemtype='http://schema.org/WebPage'>
+    <div class='headers'>
+
+        <center>
+            <a href='./'><img src='./lend/logo.png' style="    padding: 17px 17px 0 17px;" class='logo' alt='Бесплатные гадания отнайн' /></a>
+        </center>
+        <div style="    margin: 0 auto;    " class='opis_right'>
+            <!--noindex-->
+
+            <div class="opis_div">
+
+
+
+                <div class="text">
+                    <img src="./lend/slon.png" style="width: 50%; height: 50%;    display: block;
+    float: none;
+    margin: 0 auto;" class="smallimg" alt="гадание на трех картах таро">
+                    <div>
+                        <p style="font-size:11px; color:grey">หมอช้าง ทศพร ศรีตุลา</p>
+                        <h1>ไพ่ยิปซีทำนายเรื่องการเงิน</h1>
+                        <p><b>การเงินของคุณในช่วงนี้จะเป็นอย่างไร?</b><br> โปรดเลือกไพ่จากสำรับ 3 ใบ เพื่อดูคำทำนายเรื่องการเงิน ความพิศวงของรูปภาพที่ปรากฏอยู่บนไพ่พยากรณ์แต่ละใบ สามารถช่วยไขปริศนาเกี่ยวกับการเงินของคุณให้คลี่คลายไปได้อย่างน่ามหัศจรรย</p>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!--/noindex-->
+            <div class='sub_opis'>
+                <div class='div_h1' id='h1_display'>เลือกไพ่สามใบ</div>
+                <div id='show_coloda' style='position: relative'>
+                    <div class='taro_card' data-id='spravedlivost' data-rel='notchecked' data-polojenie=''></div>
+                    <div class='taro_card' data-id='imperatrica' data-rel='notchecked' data-polojenie=''></div>
+                    <div class='taro_card' data-id='jrec' data-rel='notchecked' data-polojenie=''></div>
+                    <div class='taro_card' data-id='mir' data-rel='notchecked' data-polojenie=''></div>
+                    <div class='taro_card' data-id='shut' data-rel='notchecked' data-polojenie='P'></div>
+                    <div class='taro_card' data-id='dyavol' data-rel='notchecked' data-polojenie='P'></div>
+                    <div class='taro_card' data-id='solnce' data-rel='notchecked' data-polojenie='P'></div>
+                    <div class='taro_card' data-id='otshelnik' data-rel='notchecked' data-polojenie=''></div>
+                    <div class='taro_card' data-id='kolesofortuni' data-rel='notchecked' data-polojenie=''></div>
+                    <div class='taro_card' data-id='imperator' data-rel='notchecked' data-polojenie='P'></div>
+                    <div class='taro_card' data-id='sud' data-rel='notchecked' data-polojenie=''></div>
+                    <div class='taro_card' data-id='zvezda' data-rel='notchecked' data-polojenie=''></div>
+                    <div class='taro_card' data-id='smert' data-rel='notchecked' data-polojenie=''></div>
+                    <div class='taro_card' data-id='vlublennie' data-rel='notchecked' data-polojenie=''></div>
+                    <div class='taro_card' data-id='kolesnica' data-rel='notchecked' data-polojenie='P'></div>
+                    <div class='taro_card' data-id='mag' data-rel='notchecked' data-polojenie=''></div>
+                    <div class='taro_card' data-id='sila' data-rel='notchecked' data-polojenie='P'></div>
+                    <div class='taro_card' data-id='umerennost' data-rel='notchecked' data-polojenie=''></div>
+                    <div class='taro_card' data-id='poveshenniy' data-rel='notchecked' data-polojenie=''></div>
+                    <div class='taro_card' data-id='jrica' data-rel='notchecked' data-polojenie='P'></div>
+                    <div class='taro_card' data-id='luna' data-rel='notchecked' data-polojenie=''></div>
+                    <div class='taro_card' data-id='bashnya' data-rel='notchecked' data-polojenie=''></div>
+
+
+
+
+
+
+                    <div style='clear: both'></div>
+                </div>
+
+
+
+
+                <div id="showen" style="display: none">
+                    <style>
+                        .cardd {
+                            float: right;
+                            margin: 0px 11px 5px 0px;
+                            height: 104px;
+                            width: 30%;
+                            margin: 0 auto;
+                        }
+                        
+                        .cc1 {
+                            background: url(./lend/images/taro/imperator.png) top left no-repeat;
+                        }
+                        
+                        .cc2 {
+                            background: url(./lend/images/taro/zvezda.png) top left no-repeat;
+                        }
+                        
+                        .cc3 {
+                            background: url(./lend/images/taro/spravedlivost.png) top left no-repeat;
+                        }
+                        
+                        .cc {
+                            float: left;
+                            margin: 0px 11px 5px 0px;
+                            font-size: 17px;
+                            width: 30%;
+                            text-align: center;
+                            padding: 0 3px;
+                            /* padding: 0 5px 0 29px; */
+                            margin: 0 auto;
+                        }
+                    </style>
+
+
+
+                    <div class='div_h1' style="padding-top: 5px">กำลังวิเคราะห์ไพ่ของคุณ</div>
+                    <img src="./lend/kun12.jpg" width="100%" style="opacity: 0.6" alt="">
+                    <br><br>
+                    <center>
+                        <div class='div_h1'>ไพ่ของคุณ:</div>
+                    </center>
+
+                    <div style="height: 200px;">
+
+                        <div class="cardd cc1"></div>
+                        <div class="cardd cc2"></div>
+                        <div class="cardd cc3"></div>
+                        <div class="cc cf1">
+                            <p>Сидящий жрец</p>
+                        </div>
+                        <div class="cc cf2">
+                            <p>Танцующий король</p>
+                        </div>
+                        <div class="cc cf3">
+                            <p>Любимfq vfdgf</p>
+                        </div>
+
+                    </div>
+
+                    <br>
+
+
+                    <p style=" padding: 0 10px; ">โชคชะตาทางการเงินไม่เคยอยู่ข้างคุณทั้งในอดีตและในปัจจุบัน ทำไมน่ะเหรอ? ง่ายๆ เลยก็คือ ทุกอย่างเป็นเพราะทัศนคติและการกระทำของตัวคุณเองนั่นแหละที่ผลักเงินทองให้ออกไปจากคุณ อย่างไรก็ตาม ไพ่เหล่านี้แสดงให้เห็นถึงการเปลี่ยนแปลงสำคัญที่กำลังจะเกิดขึ้นกับคุณ
+                        คุณเป็นคนที่พิเศษมาก การรวมตัวกันของไพ่เหล่านี้เกิดขึ้นได้เพียงแค่หนึ่งในล้านเท่านั้น นั่นก็หมายความว่า คุณกำลังจะมีโชคทางการเงินในอีกไม่กี่เดือนข้างหน้านี้ เงินทองจะหลั่งไหลมาหาคุณราวกับเงินทองเหล่านั้นตกลงมาจากฟากฟ้า ทั้งหมดที่คุณต้องทำก็คือ
+                        คุณจะต้องให้ความใส่ใจกับคำพูดของผมและไม่ปล่อยให้โอกาสนี้หลุดมือไป
+                    </p>
+                    <center><a href="#" style="
+        border: none;
+    color: #091413;
+    padding: 12px 10px;
+    font-size: 19px;
+    font-weight: 700;
+    background-color: #d3b37c;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;">ขอให้ทำเครื่องรางเฉพาะสำหรับคุณได้!</a></center>
+                    <p style=" padding: 0 10px">
+
+                        การที่คุณได้ไพ่ทั้งสามใบนี้เป็นสิ่งที่บอกว่า หนี้สินที่คุณมีกำลังจะหมดไปและคุณสามารถจัดการกับเงินทองที่มักจะเคยรั่วไหลออกไปจากครอบครัวของคุณได้ ปล่อยให้ทุกอย่างเข้ามาและเริ่มสวมเครื่องรางป้องกัน ตลอดชีวิตของคนเรา เรามักจะตกเป็นเหยื่อของนัยน์ตาปิศาจและเคราะห์ร้ายต่างๆ
+                        ได้ง่าย! แต่คุณสามารถปกป้องตัวเองให้พ้นจากสิ่งชั่วร้ายและเริ่มต้นใช้ชีวิตอย่างมีความสุขได้อย่างที่คุณควรจะเป็นนับจากวันที่คุณได้ถือกำเนิดขึ้นมาบนโลกใบนี้ ไม่ใช่ทุกคนที่จะสามารถขับไล่อิทธิพลของผู้ที่ประสงค์ร้ายได้ แต่ไพ่ที่คุณได้แสดงให้เห็นถึงความเข้ากันได้ดีของคุณกับเครื่องราง
+                        ไพ่เหล่านี้แสดงให้เห็นอย่างชัดเจนว่า FINANCIAL AMULET จะช่วยให้คุณมีเงินทองและขับไล่สิ่งที่ไม่ดีในชีวิตของคุณให้ออกไป เครื่องรางนี้จะปกป้องคุณจากนัยน์ตาปิศาจและความอิจฉาริษยา โชคลาภจะอยู่กับคุณเสมอในทุกที่ทุกเวลา สิ่งที่คุณตั้งใจทำจะประสบความสำเร็จทันการ
+                        คนรอบตัวคุณจะอิจฉาความสำเร็จของคุณและนี่เองที่อาจจะนำไปสู่นัยน์ตาปิศาจ เมื่อเป็นเช่นนั้นโชคลาภจะหมดไปจากคุณตลอดกาลและเงินทองจะไม่ได้เป็นส่วนหนึ่งของชีวิตของคุณอีกต่อไป เครื่องรางซึ่งทำมาจากโลหะผสมคุณภาพสูงนี้ไม่เพียงแต่จะดึงดูดเงินเข้ามาในชีวิตของคุณเท่านั้นแต่ยังจะช่วยปกป้องคุณจากคนไม่ดีและนัยน์ตาของปิศาจร้ายอีกด้วย
+
+                    </p>
+                    <div class='div_h1' style="padding: 0 10px;">Financial Amulet คืออะไร?
+
+                    </div>
+                    <div style="margin: 0px 0px 11px;padding: 0 10px;" data-param="p11"><b> <a href="#" > Financial Amulet</a></b> จะเริ่มต้นจัดการการไหลเวียนของเงินมาสู่ผู้เป็นเจ้าของซึ่งเป็นสิ่งที่ก่อนหน้านี้คุณไม่เคยจะได้รับ<br><i><span>
+
+  <br>
+  คุณจะได้รับอะไร:
+  <br>
+
+  <img alt="" src="./lend/index_files/bullet.png" width="16" height="16">&nbsp;คุณจะได้รับการเสนองานที่เงินเดือนดี;<br></span></i><i><span>
+    <img alt="" src="./lend/index_files/bullet.png" width="16" height="16">&nbsp;คุณจะชำระหนี้สินได้หมด;<br></span></i><i><span>
+      <img alt="" src="./lend/index_files/bullet.png" width="16" height="16">&nbsp;คุณจะเห็นถึงความรุ่งเรืองของงานที่ทำ;<br></span></i><i>
+        <span><img alt="" src="./lend/index_files/bullet.png" width="16" height="16">&nbsp;โชคดีในเรื่องของการเงิน;<br></span></i><i>
+          <span><img alt="" src="./lend/index_files/bullet.png" width="16" height="16">&nbsp;ความสำเร็จในทุกความพยายามที่จะร่ำรวยของคุณ;<br></span></i><i>
+            <span><img alt="" src="./lend/index_files/bullet.png" width="16" height="16">&nbsp;ความสำเร็จในการทำธุรกิจ;</span></i></div>
+
+
+                    <p style=" padding: 0 10px">นับจากนี้เป็นต้นไป เครื่องรางนี้จะช่วยให้คุณโชคดีและมีความมั่งคั่งไปตลอดชีวิตของคุณ คุณจะไม่สูญเสียโชคลาภไปไม่ว่าคุณจะทำอย่างไรก็ตาม หากชีวิตกำหนดให้คุณสองคนเป็นคู่กัน คุณจะเข้ากันได้ดีเหมือนการผสานปรอททั้งสองหยดเข้าด้วยกัน หากมีอันต้องพลัดพราก
+                        คุณจะได้กลับมาอยู่ด้วยกันอีกครั้ง
+                    </p>
+
+                    <center><a href="#" style="     border: none;
+    color: #091413;
+    padding: 12px 10px;
+    font-size: 19px;
+    font-weight: 700;
+    background-color: #d3b37c;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;">ขอให้ทำเครื่องรางเฉพาะสำหรับคุณได้!</a></center>
+                    <!--
+<h2>Комментарии</h2>
+<table style="    padding-bottom: 15px;"><tr>
+    <td style="width: 19%"><img width="100%" src="./lend/index_files/16000000.jpg" alt=""></td>
+    <td style="width: 83%;    padding-left: 28px;"><span style="color: #fff">Анастасия Латвинова</span><br>
+Спасибо огромное за понятное и грамотное разъясение. Все сказано и выражено четко и понятно. Всем удачи, здоровья, любви и счастья!!!</td>
+</tr></table>
+<table style="    padding-bottom: 15px;"><tr>
+    <td style="width: 19%"><img width="100%" src="./lend/index_files/20000000.jpg" alt=""></td>
+    <td style="width: 83%;    padding-left: 28px;"><span style="color: #fff">Ксения Румянцева</span><br>
+Мне выпали три карты, которые означают чорную получу в жизни, что я могу сделать, чтобы избежать ее?</td>
+</tr></table>
+<table style="    padding-bottom: 15px;"><tr>
+    <td style="width: 19%"><img width="100%" src="./lend/index_files/21000000.jpg" alt=""></td>
+    <td style="width: 83%;    padding-left: 28px;"><span style="color: #fff">Галина Миронова</span><br>
+        Если все правда, то вскоре смогу забеременнеть, спасибо за проноз!
+
+</td>
+</tr></table>
+
+<table style="    padding-bottom: 15px;"><tr>
+    <td style="width: 19%"><img width="100%" src="./lend/index_files/16_00100.jpg" alt=""></td>
+    <td style="width: 83%;    padding-left: 28px;"><span style="color: #fff">Иван Ерехин</span><br>
+        Боюсь, что мой прогноз не верный, ведь выпало, что будет, что-то плохое в ближайшее время, а у меня все хорошо. Что на это скажете?
+</td>
+</tr></table>
+
+<table style="    padding-bottom: 15px;"><tr>
+    <td style="width: 19%"><img width="100%" src="./lend/index_files/18_00100.jpg" alt=""></td>
+    <td style="width: 83%;    padding-left: 28px;"><span style="color: #fff">Константин Филатов</span><br>
+        Спасибо за ответ на вопрос, который интересовал меня давно. Меня всегда мучили сомнения, а сейчас стало легче. Спасибо, я Вам очень за это благодарен.
+</td>
+</tr></table>--><br>
+
+                    <style>
+                        .vk-container {
+                            font-family: tahoma, arial, verdana, sans-serif, Lucida Sans;
+                            font-size: 12px;
+                            line-height: 17px;
+                            color: black;
+                            text-decoration: none;
+                            background: #fff
+                        }
+                        
+                        .vk-link {
+                            text-decoration: none ! important;
+                            cursor: default ! important;
+                        }
+                        
+                        .vk-header {
+                            background: #4267b2 none repeat scroll 0% 0%;
+                            padding: 4px 4px 4px 6px;
+                            margin-bottom: 10px;
+                        }
+                        
+                        .vk-logo {
+                            background: transparent url("../img/vk-logo0.gif") no-repeat scroll 0% 0%;
+                            width: 16px;
+                            height: 16px;
+                            float: right;
+                            margin-top: -1px;
+                        }
+                        
+                        .vk-header-text {
+                            padding: 2px 3px 1px;
+                            line-height: 100%;
+                            color: #fff;
+                        }
+                        
+                        .vk-avatar img {
+                            float: left;
+                            margin: 0 10px 0 2px;
+                            cursor: pointer;
+                        }
+                        
+                        .vk-comment,
+                        .vk-comment-load {
+                            margin-bottom: 15px;
+                            position: relative;
+                            border-bottom: 1px solid rgb(218, 225, 232);
+                            padding-bottom: 15px;
+                        }
+                        
+                        .vk-comment:last-child {
+                            border-bottom: 0px none;
+                        }
+                        
+                        .vk-comment-name {
+                            color: rgb(43, 88, 122);
+                            font-weight: bold;
+                            font-size: 12px;
+                        }
+                        
+                        .vk-comment-name:hover {
+                            text-decoration: underline;
+                            cursor: pointer;
+                        }
+                        
+                        .vk-comment-text {
+                            margin-left: 60px;
+                            color: rgb(0, 0, 0);
+                        }
+                        
+                        .vk-comment-date {
+                            margin-left: 60px;
+                            color: rgb(153, 153, 153);
+                        }
+                        
+                        .vk-comment-like {
+                            position: absolute;
+                            right: -5px;
+                            bottom: 10px;
+                            background: transparent;
+                            width: 30px;
+                            height: 16px;
+                            display: inline-block;
+                        }
+                        
+                        .vk-comment-like:hover {
+                            opacity: 0.5;
+                            cursor: pointer;
+                        }
+                        
+                        .vk-comment-like-count {
+                            padding-left: 14px;
+                            font-weight: bold;
+                            color: rgb(114, 149, 178);
+                            font-size: 10px;
+                            position: relative;
+                            width: 28px;
+                            right: 28px;
+                        }
+                        
+                        .vk-comment-like-count img {
+                            width: 12px;
+                            display: inline-block;
+                            position: relative;
+                            top: 2px;
+                        }
+                        
+                        .vk-comment-answer {
+                            color: rgb(43, 88, 122);
+                        }
+                        
+                        .vk-comment-answer:hover {
+                            opacity: 0.5;
+                            cursor: pointer;
+                        }
+                    </style>
+
+                    <div class="vk-container">
+                        <div class="vk-header">
+                            <div class="vk-logo"></div>
+                            <div class="vk-header-text">
+                                <span class="comment-count">
+                        <span data-param="comment-count-text">7 comments</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="vk-comment-load comment-id-1">
+                            <a href="#" target="_blank" class="vk-link" style="cursor: pointer;">
+                                <div class="vk-avatar"><img width="50px" data-param="16000000jpg" src="lend/c11.jpg"></div>
+                            </a>
+                            <a href="#" target="_blank" class="vk-link" style="cursor: pointer;">
+                                <div class="vk-comment-name">
+                                    <span data-param="vk_comment_name_1">ก้อรวย ชิค่ะ</span>
+                                </div>
+                            </a>
+                            <div class="vk-comment-text">
+                                <div data-param="vk_comment_text_1">ขอบคุณมากๆ สำหรับคำอธิบายที่ชัดเจนและรอบด้านนี้ ผมขอให้คุณโชคดี สุขภาพดี มีความรักที่ดีและมีแต่ความสุข!!!
+                                </div>
+                            </div>
+                            <div class="vk-comment-date">
+                                <span data-param="vk_comment_time_1">10 minutes ago</span> |
+                                <a href="#" target="_blank" class="vk-link" style="cursor: pointer;"><span class="vk-comment-answer">
+                        <span data-param="vk_comment_action_text">Reply</span></span></a>
+                            </div>
+                            <a href="#" target="_blank" class="vk-link" style="cursor: pointer;">
+                                <div class="vk-comment-like">
+                                    <div class="vk-comment-like-count">
+                                        <img src="https://seeklogo.com/images/F/facebook-like-logo-32FAB6926D-seeklogo.com.png" alt="">
+                                        <span data-param="vk_comment_like_count_1">3</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="vk-comment-load comment-id-1">
+                            <a href="#" target="_blank" class="vk-link" style="cursor: pointer;">
+                                <div class="vk-avatar"><img width="50px" data-param="16000000jpg" src="lend/c12.jpg"></div>
+                            </a>
+                            <a href="#" target="_blank" class="vk-link" style="cursor: pointer;">
+                                <div class="vk-comment-name">
+                                    <span data-param="vk_comment_name_1">Tee Su</span>
+                                </div>
+                            </a>
+                            <div class="vk-comment-text">
+                                <div data-param="vk_comment_text_1">ฉันได้ไพ่สามใบที่บอกถึงความดำมืดของชีวิต ฉันจะหลีกเลี่ยงเคราะห์ร้ายไปได้อย่างไร?
+                                </div>
+                            </div>
+                            <div class="vk-comment-date">
+                                <span data-param="vk_comment_time_1">14 minutes ago</span> |
+                                <a href="#" target="_blank" class="vk-link" style="cursor: pointer;"><span class="vk-comment-answer">
+                        <span data-param="vk_comment_action_text">Reply</span></span></a>
+                            </div>
+                            <a href="#" target="_blank" class="vk-link" style="cursor: pointer;">
+                                <div class="vk-comment-like">
+                                    <div class="vk-comment-like-count">
+                                        <img src="https://seeklogo.com/images/F/facebook-like-logo-32FAB6926D-seeklogo.com.png" alt="">
+                                        <span data-param="vk_comment_like_count_1">3</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="vk-comment-load comment-id-1">
+                            <a href="#" target="_blank" class="vk-link" style="cursor: pointer;">
+                                <div class="vk-avatar"><img width="50px" data-param="16000000jpg" src="lend/c16.jpg"></div>
+                            </a>
+                            <a href="#" target="_blank" class="vk-link" style="cursor: pointer;">
+                                <div class="vk-comment-name">
+                                    <span data-param="vk_comment_name_1">Ning Ning</span>
+                                </div>
+                            </a>
+                            <div class="vk-comment-text">
+                                <div data-param="vk_comment_text_1">ถ้าคำนายเป็นจริง ฉันจะตั้งครรภ์ในอีกไม่ช้านี้ ขอบคุณสำหรับคำนายดีๆ แบบนี้นะคะ!
+                                </div>
+                            </div>
+                            <div class="vk-comment-date">
+                                <span data-param="vk_comment_time_1">29 minutes ago</span> |
+                                <a href="#" target="_blank" class="vk-link" style="cursor: pointer;"><span class="vk-comment-answer">
+                        <span data-param="vk_comment_action_text">Reply</span></span></a>
+                            </div>
+                            <a href="#" target="_blank" class="vk-link" style="cursor: pointer;">
+                                <div class="vk-comment-like">
+                                    <div class="vk-comment-like-count">
+                                        <img src="https://seeklogo.com/images/F/facebook-like-logo-32FAB6926D-seeklogo.com.png" alt="">
+                                        <span data-param="vk_comment_like_count_1">3</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="vk-comment-load comment-id-1">
+                            <a href="#" target="_blank" class="vk-link" style="cursor: pointer;">
+                                <div class="vk-avatar"><img width="50px" data-param="16000000jpg" src="lend/c14.jpg"></div>
+                            </a>
+                            <a href="#" target="_blank" class="vk-link" style="cursor: pointer;">
+                                <div class="vk-comment-name">
+                                    <span data-param="vk_comment_name_1">Nobal Eve</span>
+                                </div>
+                            </a>
+                            <div class="vk-comment-text">
+                                <div data-param="vk_comment_text_1">ฉันคาดว่า คำทำนายของฉันน่าจะผิด ถ้าเป็นไปตามคำทำนาย จะมีอะไรแย่ๆ เกิดขึ้นกับฉันในอนาคตอันใกล้นี้ แต่ตอนนี้ทุกอย่างยังคงดีอยู่ เป็นไปได้ยังไงกัน?
+                                </div>
+                            </div>
+                            <div class="vk-comment-date">
+                                <span data-param="vk_comment_time_1">4 hours ago</span> |
+                                <a href="#" target="_blank" class="vk-link" style="cursor: pointer;"><span class="vk-comment-answer">
+                        <span data-param="vk_comment_action_text">Reply</span></span></a>
+                            </div>
+                            <a href="#" target="_blank" class="vk-link" style="cursor: pointer;">
+                                <div class="vk-comment-like">
+                                    <div class="vk-comment-like-count">
+                                        <img src="https://seeklogo.com/images/F/facebook-like-logo-32FAB6926D-seeklogo.com.png" alt="">
+                                        <span data-param="vk_comment_like_count_1">3</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="vk-comment-load comment-id-1">
+                            <a href="#" target="_blank" class="vk-link" style="cursor: pointer;">
+                                <div class="vk-avatar"><img data-param="16000000jpg" src="comment/12.jpeg"></div>
+                            </a>
+                            <a href="#" target="_blank" class="vk-link" style="cursor: pointer;">
+                                <div class="vk-comment-name">
+                                    <span data-param="vk_comment_name_1">Win Yi</span>
+                                </div>
+                            </a>
+                            <div class="vk-comment-text">
+                                <div data-param="vk_comment_text_1">ฉันรู้เกี่ยวกับคุณสมบัติที่น่ามหัศจรรย์ของเครื่องรางและของขลัง ฉันปฏิบัติตามคำแนะนำของคุณและซื้อเครื่องราง ฉันดีใจที่ทำแบบนี้! ปัญหาสุขภาพและปัญหาการเงินของฉันหมดไป สามีกับฉันได้มีชีวิตที่มีชีวิตเสียที พวกเรากำลังจะมีลูกด้วยกัน
+                                    ฉันมีความสุขมากๆ เลยค่ะ
+                                </div>
+                            </div>
+                            <div class="vk-comment-date">
+                                <span data-param="vk_comment_time_1">8 hours ago</span> |
+                                <a href="#" target="_blank" class="vk-link" style="cursor: pointer;"><span class="vk-comment-answer">
+                        <span data-param="vk_comment_action_text">Reply</span></span></a>
+                            </div>
+                            <a href="#" target="_blank" class="vk-link" style="cursor: pointer;">
+                                <div class="vk-comment-like">
+                                    <div class="vk-comment-like-count">
+                                        <img src="https://seeklogo.com/images/F/facebook-like-logo-32FAB6926D-seeklogo.com.png" alt="">
+                                        <span data-param="vk_comment_like_count_1">3</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="vk-comment-load comment-id-1">
+                            <a href="#" target="_blank" class="vk-link" style="cursor: pointer;">
+                                <div class="vk-avatar"><img data-param="16000000jpg" style="width: 50px" src="lend/c15.jpg"></div>
+                            </a>
+                            <a href="#" target="_blank" class="vk-link" style="cursor: pointer;">
+                                <div class="vk-comment-name">
+                                    <span data-param="vk_comment_name_1">ปลายทาง ทีว่างเปล่า</span>
+                                </div>
+                            </a>
+                            <div class="vk-comment-text">
+                                <div data-param="vk_comment_text_1">ขอบคุณที่ตอบคำถามของฉัน ฉันอยากหาคำตอบมานานมากแล้ว ฉันมักต้องทุกข์ทรมานจากหนี้สิน แต่ตอนนี้ทุกอย่างง่ายขึ้นมาก ขอบคุณมากๆ เลยค่ะ
+                                </div>
+                            </div>
+                            <div class="vk-comment-date">
+                                <span data-param="vk_comment_time_1">Yesterday</span> |
+                                <a href="#" target="_blank" class="vk-link" style="cursor: pointer;"><span class="vk-comment-answer">
+                        <span data-param="vk_comment_action_text">Reply</span></span></a>
+                            </div>
+                            <a href="#" target="_blank" class="vk-link" style="cursor: pointer;">
+                                <div class="vk-comment-like">
+                                    <div class="vk-comment-like-count">
+                                        <img src="https://seeklogo.com/images/F/facebook-like-logo-32FAB6926D-seeklogo.com.png" alt="">
+                                        <span data-param="vk_comment_like_count_1">3</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <center><a href="#" style="     border: none;
+    color: #091413;
+    padding: 12px 10px;
+    font-size: 19px;
+    font-weight: 700;
+    background-color: #d3b37c;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;">ขอให้ทำเครื่องรางเฉพาะสำหรับคุณได้!</a></center>
+
+
+
+
+
+
+
+
+                </div>
+                <script type='text/javascript'>
+                    //<![CDATA[
+
+
+                    counts = 0;
+                    cards = [];
+                    cards1 = ['spravedlivost', 'imperatrica', 'jrec', 'mir'];
+                    cards2 = ['shut', 'dyavol', 'solnce', 'otshelnik'];
+                    cards3 = ['kolesofortuni', 'imperator', 'sud', 'zvezda', 'kolesnica'];
+                    var item1 = 'spravedlivost';
+                    var item2 = 'shut';
+                    var item3 = 'kolesofortuni';
+
+                    $('.cc1').css({
+                        'background': 'url(./lend/images/taro/g18.gif) top left no-repeat'
+                    });
+                    $('.cc2').css({
+                        'background': 'url(./lend/images/taro/g01.gif) top left no-repeat'
+                    });
+                    $('.cc3').css({
+                        'background': 'url(./lend/images/taro/g15.gif) top left no-repeat'
+                    });
+
+                    //$('.cc1').css({'background':'url(./lend/images/taro/'+item1+'.png) top left no-repeat'});
+                    //$('.cc2').css({'background':'url(./lend/images/taro/'+item2+'.png) top left no-repeat'});
+                    //$('.cc3').css({'background':'url(./lend/images/taro/'+item3+'.png) top left no-repeat'});
+                    polojenie = [];
+                    $('#random').click(function() {
+                        $('#show_coloda .taro_card').shuffle();
+                        $('#show_coloda .taro_card').attr({
+                            'data-rel': 'notchecked'
+                        });
+                        $('#show_coloda .taro_card').css({
+                            'background': 'url(../1.png)'
+                        });
+                        counts = 0;
+                        cards = [];
+                        polojenie = [];
+                        $('#show_coloda').fadeOut().fadeIn(100);
+                    });
+                    $('.taro_card').hover(function() {
+                        $(this).css({
+                            'opacity': '0.5'
+                        });
+                    }, function() {
+                        $(this).css({
+                            'opacity': '1'
+                        });
+                    });
+
+
+                    $('.taro_card').click(function() {
+                        if ($(this).attr('data-rel') == 'notchecked') {
+                            $(this).attr({
+                                'data-rel': 'checked'
+                            });
+                            counts++;
+                            cards.push($(this).attr('data-id'));
+                            polojenie.push($(this).attr('data-polojenie'));
+                            $(this).css({
+                                'background': 'url(./images/taro/' + $(this).attr('data-id') + $(this).attr('data-polojenie') + '.png)'
+                            });
+                            if (counts == 3) {
+                                $('.bggg').show();
+                                $('.step_1').show();
+                                window.scrollTo(0, 0);
+                                /*  $('#show_coloda').html('<img src="./lend/images/loader.gif" style="margin: auto; display: block; width: 106px"/>');
+                                            $('#h1_display').hide();
+                                            $('#show_coloda').hide();
+                                            $('.opis_div').hide();
+                                            $('#showen').show();*/
+
+                            }
+                        }
+                    });
+
+
+
+
+                    //]]>
+                </script>
+            </div>
+            <!--noindex-->
+        </div>
+    </div>
+
+    <style>
+        .reg5 {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            border: 0;
+            max-width: 200px;
+            padding: 12px 0;
+            font-size: 19px;
+            border-radius: 6px;
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+            line-height: 100%;
+            text-decoration: none !important;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            cursor: default;
+            cursor: pointer;
+            color: #091413 !important;
+            font-weight: 700;
+            background-color: #d3b37c;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+    </style>
+    <div class="bggg" style="    width: 100%;
+    height: 100vh;
+        background: rgba(0, 0, 0, 0.85);
+    position: absolute;
+    top: 0;
+    display: none;
+    z-index: 5;
+    color: #fff;
+   ">
+
+
+
+
+        <center>
+            <div class="step_1" style="    width: 250px;display: none;
+    margin: 0 auto;
+    text-align: center;
+    top: 100px;
+    position: relative;">
+                <h1>ชื่อ-นามสกุล:</h1>
+                <ul class="small_form">
+                    <li><input style="padding: 10px;    margin: 0 6px 0 0;" name="name" value="" placeholder="ชื่อ" type="text"></li>
+                </ul>
+                <p></p>
+                <div class="reg5 butter1">ดำเนินการต่อ</div>
+                <p></p>
+            </div>
+        </center>
+
+
+
+        <div class="step_2" style="    width: 250px; display: none;
+                            text-align: center;
+    margin: 0 auto;
+    top: 100px;
+    position: relative;">
+            <h1>เพศ:</h1>
+            <p><label for="man"><input name="sex" id="man" value="man" type="radio"> ชาย</label></p>
+            <p><label for="woman"><input name="sex" checked="checked" id="woman" value="woman" type="radio"> หญิง</label></p>
+            <p></p>
+            <div class="reg5 butter2">ดำเนินการต่อ</div>
+            <p></p>
+        </div>
+    </div>
+
+    <div class="bggg1" style="    width: 100%;
+    height: 100vh;
+        background: rgba(0, 0, 0, 0.85);
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    color: #fff;
+    display: none
+   ">
+
+
+
+
+        <center>
+            <div class="step_12" style="width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    top: 100px;
+    position: relative;">
+                <h1>คุณได้รับผลการแจกการ์ด Tarot ของคุณแล้ว</h1>
+                <div class="reg5 butter2">ดูผลลัพธ์</div>
+            </div>
+        </center>
+
+    </div>
+    <script>
+        $('.butter1').click(function() {
+            $('.step_1').hide();
+            $('.step_2').show();
+        });
+        $('.butter2').click(function() {
+            $('.bggg').hide();
+            $('.bggg1').hide();
+            $('#h1_display').hide();
+            $('#show_coloda').hide();
+            document.cookie = "first_view=1";
+            $('.opis_div').hide();
+            $('#showen').show();
+        });
+
+        switch (item1) {
+            case 'spravedlivost':
+                $('.cf3 p').text('จักรพรรดิบนบัลลังก์');
+                break;
+        }
+
+        switch (item2) {
+            case 'shut':
+                $('.cf2 p').text('ไพ่ผู้ใช้เวทมนตร์');
+                break;
+        }
+
+        switch (item3) {
+            case 'kolesofortuni':
+                $('.cf1 p').text('ไพ่ปีศาจ');
+                break;
+        }
+
+        if (document.cookie.indexOf('first_view') != -1) {
+            $('.bggg1').show();
+        }
+    </script>
+
+</body>
+
+</html>

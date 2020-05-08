@@ -1,0 +1,2066 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-Family: 'Arial', Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+body {
+    background: url(../images/topstar.jpg) top center no-repeat #000;
+    background-attachment: fixed;
+}
+
+.headers {
+    position: relative;
+    max-width: 920px;
+    height: 100%;
+    margin: auto;
+    min-height: 300px;
+}
+
+.t_rate {
+    background: url(images/rating.png);
+    background-size: cover;
+    min-width: 270px;
+    height: 57px;
+    display: table;
+    margin: auto;
+    padding: 10px 0px 5px 25px;
+    margin-top: 10px;
+    position: relative;
+    border-top: 2px solid #444;
+}
+
+.favorite {
+    display: table;
+    padding: 5px 5px 5px 5px;
+    background-color: #000;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sub_f {
+    display: inline-block;
+    color: #fff;
+    cursor: pointer;
+    margin: 5px 5px 5px 5px;
+    padding: 1px 10px 1px 10px;
+    border: 1px solid #737070;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background: #464646;
+}
+
+.sub_f:hover {
+    background: #223e27;
+}
+
+.favorite_remove {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    background: url(../images/favorite_remove.png);
+    cursor: pointer;
+}
+
+.t_star {
+    min-width: 25px;
+    max-width: 250px;
+    height: 21px;
+    position: relative;
+    z-index: 1;
+    background: url('images/sstar1.png') top left no-repeat;
+    text-align: right;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.t_star_vote {
+    height: 21px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    background: url('images/sstar.png') top left no-repeat;
+}
+
+.t_star_votes {
+    height: 21px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    background: url('images/sstar.png') top left no-repeat;
+}
+
+.t_vote {
+    width: 25px;
+    height: 21px;
+    float: left;
+    position: relative;
+    z-index: 4;
+}
+
+.t_total_vote {
+    font-size: 11px;
+    color: #9c9494;
+    display: table;
+    margin: auto;
+    padding: 5px 0px 0px 0px;
+}
+
+.google_alt_adapt {
+    display: table;
+    margin: auto;
+}
+
+.alt_adapt {
+    text-decoration: none;
+    color: #fff;
+}
+
+.alt_adapt:hover {
+    -webkit-filter: contrast(185%);
+}
+
+.alt_adapt a {
+    text-decoration: none;
+}
+
+.alt_adapt img {
+    float: left;
+    width: 70px;
+    height: 39px;
+    padding-left: 5px;
+}
+
+.alt_adapt span {
+    font-size: 11px;
+    display: table;
+    margin: auto;
+    padding-left: 5px;
+    color: #89989D;
+    padding-right: 3px;
+}
+
+.alt_adapt span strong {
+    color: #C5CDCF;
+    font-size: 12px;
+}
+
+.alt_top {
+    background: url(../images/0_alt/alt_top.jpg) top center no-repeat;
+}
+
+.alt_bottom {
+    background: url(../images/0_alt/alt_bottom.jpg) top center no-repeat;
+}
+
+.alt_top,
+.alt_bottom {
+    width: 468px;
+    height: 60px;
+    margin: auto;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    overflow: hidden;
+}
+
+.alt_big:hover {
+    -webkit-filter: contrast(185%);
+}
+
+.alt_top:hover,
+.alt_bottom:hover {
+    -webkit-filter: contrast(185%);
+}
+
+.alt_top img,
+.alt_bottom img {
+    display: block;
+    float: left;
+    width: 70px;
+    height: 39px;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+.alt_top div,
+.alt_bottom div {
+    float: right;
+    width: 377px;
+    height: 60px;
+    display: block;
+    color: #fff;
+}
+
+.alt_top div p,
+.alt_bottom div p {
+    font-size: 12px;
+    display: table;
+    margin: auto;
+    padding-left: 5px;
+    color: #fff;
+    padding-right: 3px;
+}
+
+.alt_top div p strong,
+.alt_bottom div p strong {
+    color: #f5f5f5;
+    font-size: 13px;
+}
+
+.karti_sonnik {
+    float: right;
+    display: table;
+    background: url(images/karti_sonnik.png) top left no-repeat;
+    padding-left: 75px;
+    cursor: pointer;
+}
+
+.karti_sonnik span {
+    border-bottom: 1px dashed #89989D;
+    color: #fff;
+}
+
+.karti_sonnik span:hover {
+    color: #89989D;
+}
+
+.updown {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 3px 3px 2px 3px;
+    background: url(images/updown.png) no-repeat;
+    background-position: top right;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.updown:hover {
+    transform: rotate(360deg);
+}
+
+.updown_div {
+    overflow: hidden;
+    height: 67px;
+}
+
+.relap-default__item-title a {
+    color: #fff;
+}
+
+.rekl_rand img,
+.rekl_rand p {
+    display: none;
+}
+
+blockquote {
+    padding: 5px 5px 5px 5px;
+    font-size: 14px;
+    background: #0F0E0E;
+    border-radius: 25px;
+    box-shadow: 2px 2px #2E2929;
+    color: #A8A8A8;
+    font-style: italic;
+}
+
+.random_zametka_sonnik {
+    padding: 5px 5px 5px 10px;
+    font-size: 14px;
+    background: #0F0E0E;
+    border-radius: 25px;
+    box-shadow: 2px 2px #2E2929;
+    color: #A8A8A8;
+    font-style: italic;
+    position: relative;
+}
+
+.random_zametka {
+    float: right;
+    margin: 45px 15px 5px 10px;
+    padding: 5px 10px 5px 10px;
+    font-size: 14px;
+    max-width: 250px;
+    width: 30%;
+    background: #0F0E0E;
+    border-radius: 25px;
+    box-shadow: 2px 2px #2E2929;
+    color: #A8A8A8;
+    font-style: italic;
+    position: relative;
+}
+
+.rand_set {
+    display: table;
+    float: right;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-right: 10px;
+    padding-left: 23px;
+    background: url(../images/rand_set.png) center left no-repeat;
+}
+
+.runi_maya {
+    font-size: 40px;
+    color: #141414;
+    padding-left: 0px;
+    margin-top: 6px;
+    margin-left: 1px;
+    text-align: center;
+}
+
+.mag_article_img_left {
+    float: left;
+    margin: 0px 10px 10px 0px;
+    width: 100%;
+    max-width: 150px;
+}
+
+.mag_article_img_right {
+    float: right;
+    margin: 0px 0px 10px 10px;
+    width: 100%;
+    max-width: 150px;
+}
+
+.mag_article ul,
+.mag_article ol {
+    list-style-position: inside;
+}
+
+.mag_article ol li {
+    list-style-type: decimal;
+}
+
+.mag_article ul li {
+    list-style-image: url(../images/sni.png);
+}
+
+.mag_article h3 {
+    font-size: 14px;
+}
+
+.articles_ps {
+    display: inline-block;
+    width: 120px;
+    min-height: 135px;
+    margin: 0px 10px 0px 0px;
+    padding: 0px 15px 0px 5px;
+    font-size: 10px;
+    vertical-align: top;
+}
+
+.articles_ps img {
+    width: 120px;
+    height: 80px;
+    display: table;
+    margin-bottom: 10px;
+}
+
+.run_article ul {
+    list-style-position: inside;
+}
+
+.run_article ol li {
+    list-style-type: decimal;
+}
+
+.run_article ul li {
+    list-style-image: url(../images/sni.png);
+}
+
+.taro_art ul {
+    list-style-position: inside;
+}
+
+.taro_art ul li {
+    list-style-image: url(../images/sni.png);
+}
+
+.sonnik_left {
+    max-width: 440px;
+    margin-left: 10px;
+    width: 47%;
+    float: left;
+    min-width: 220px;
+}
+
+.glitext {
+    width: 67px;
+    border: 0;
+    margin-right: 1px;
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+    padding: 5px 1px 5px 1px;
+    display: block;
+    float: left;
+}
+
+.gli {
+    width: 67px;
+    border: 0;
+    margin-right: 1px;
+    background: #1B2326;
+    color: #89989D;
+    font-size: 13px;
+    padding: 5px 1px 5px 1px;
+    display: block;
+    float: left;
+}
+
+.gad_class {
+    font-family: Comic Sans MS;
+    font-size: 14px;
+    max-width: 300px;
+    margin: auto;
+    display: block;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.id_gad_start {
+    font-family: Comic Sans MS;
+    font-size: 20px;
+    display: table;
+    cursor: pointer;
+    border: 1px solid #284286;
+    padding: 5px 15px 5px 15px;
+    background: #272848;
+    color: #fff;
+    margin: 10px auto 10px auto;
+}
+
+.gad_result_text {
+    display: none;
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+}
+
+.list {
+    width: 22%;
+    min-height: 25px;
+    background: url(../images/sni.png) 5px 2px no-repeat;
+    padding-left: 25px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.zerna_text {
+    position: absolute;
+    top: 20px;
+    left: 190px;
+    width: 280px;
+    font-size: 18px;
+    font-family: Comic Sans MS;
+    color: #000;
+    display: none;
+}
+
+.zerna_count {
+    position: absolute;
+    left: 30px;
+    top: 120px;
+    font-size: 100px;
+    color: #000;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-family: Comic Sans MS;
+    display: none;
+}
+
+.vudu_count {
+    position: absolute;
+    left: 10px;
+    top: 150px;
+    font-size: 100px;
+    color: #000;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-family: Comic Sans MS;
+    display: none;
+}
+
+.zerna_begin {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 153px;
+    height: 110px;
+    cursor: pointer;
+    z-index: 4;
+}
+
+.vudu_begin {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 163px;
+    height: 137px;
+    cursor: pointer;
+    z-index: 4;
+}
+
+.zerna {
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+}
+
+.runi_zag {
+    display: table;
+    margin: auto;
+    padding: 0px 0px 10px 0px;
+}
+
+.runi_list {
+    padding: 7px;
+    background: #251F1F;
+    border: 1px solid #2C2424;
+    display: table;
+    float: left;
+    margin: 5px 10px 5px 5px;
+}
+
+.runi_opis {
+    float: left;
+    margin: 10px 20px 10px 5px;
+    transition: all 0.5s ease;
+}
+
+.runi_opis:hover {
+    transform: scale(1.2);
+}
+
+.ul_taro {
+    display: block;
+}
+
+.ul_taro li {
+    list-style-position: inside;
+    list-style-type: disc;
+}
+
+.submoons {
+    display: none;
+}
+
+.moon {
+    min-height: 25px;
+    background: url(../images/sni.png) 5px 2px no-repeat;
+    padding-left: 25px;
+}
+
+.moons {
+    min-height: 25px;
+    background: url(../images/sni.png) 5px 2px no-repeat;
+    padding-left: 25px;
+    font-weight: bold;
+    color: #89989D;
+}
+
+.moons_href {
+    min-height: 25px;
+    background: url(../images/sni.png) 5px 2px no-repeat;
+    padding-left: 25px;
+    font-weight: bold;
+    color: #89989D;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.sonnik_input {
+    padding: 3px;
+    font-size: 14px;
+    border: 0;
+    background: #1B2326;
+    color: #89989D;
+    margin-right: 2px;
+}
+
+#show_sonnik {
+    position: relative;
+}
+
+.sl_runi {
+    float: left;
+    margin: 0px 11px 5px 0px;
+    height: 67px;
+    width: 67px;
+    background: url(../images/sl_runi/rubashka.png) top left no-repeat;
+    cursor: pointer;
+}
+
+.div_h1 {
+    font-size: 18px;
+    color: #C5CDCF;
+    padding-left: 5px;
+    padding-top: 0px;
+    margin-top: 0px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.div_h1z {
+    font-size: 18px;
+    color: #10add4;
+    padding-left: 5px;
+    padding-top: 0px;
+    margin-top: 0px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.href_div {
+    display: table;
+    //float: left; 
+    min-height: 25px;
+    background: url(../images/sni.png) 5px 2px no-repeat;
+    padding-left: 25px;
+}
+
+.h1_center h1,
+.h1_center h2 {
+    text-align: center;
+}
+
+.kards_3 p {
+    padding: 0;
+    margin: 3px;
+}
+
+.soc_like {
+    height: 25px;
+    vertical-align: top;
+    display: inline-block;
+    text-align: left;
+}
+
+.soc {
+    display: block;
+    height: 20px;
+    padding-right: 20px;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    margin: 0px 0px 2px 0px;
+    width: 100px;
+    transition: background-position 0.5s ease;
+    text-align: right;
+}
+
+.vk {
+    background-image: url('../images/soc/vk1.png');
+}
+
+.tw {
+    background-image: url('../images/soc/tw1.png');
+}
+
+.fb {
+    background-image: url('../images/soc/fb1.png');
+}
+
+.gp {
+    background-image: url('../images/soc/gp1.png');
+}
+
+.vk:hover,
+.tw:hover,
+.fb:hover,
+.gp:hover {
+    background-position: top right;
+}
+
+.svecha {
+    width: 47px;
+    height: 116px;
+    position: absolute;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+#svecha1 {
+    left: 15px;
+}
+
+#svecha2 {
+    right: 15px;
+}
+
+.sonnik {
+    display: block;
+    min-width: 115px;
+    min-height: 19px;
+    background: url(../images/sni.png) 5px 6px no-repeat #28282B;
+    padding: 3px 3px 3px 25px;
+    font-weight: bold;
+    color: #C5CDCF;
+    box-shadow: 0px 4px 4px #6E6D6D;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.snow {
+    cursor: pointer;
+}
+
+.h2 {
+    font-size: 16px;
+    color: #C5CDCF;
+}
+
+.h3 {
+    color: #e5e5e5;
+    padding: 0px 0px 15px 5px;
+    z-index: 1;
+    position: relative;
+}
+
+.wait {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+}
+
+.question {
+    color: #89989D;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 15px 0px 15px 0px;
+    position: relative;
+}
+
+.question:hover {
+    color: #e5e5e5;
+    text-decoration: underline;
+}
+
+.answer {
+    margin: 5px 0px 5px 10px;
+    width: 250px;
+    color: #C5CDCF;
+    border: 1px solid #89989D;
+    padding: 7px;
+}
+
+.admin {
+    color: #00ABEA;
+}
+
+#helps {
+    color: #e5e5e5;
+}
+
+ul,
+li,
+ol {
+    margin: 0;
+    padding: 5px 0px 5px 4px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.divnav {
+    border-top: 1px solid #e5e5e5;
+    padding: 0px 5px 10px 10px;
+    background: none;
+    cursor: pointer;
+}
+
+.divnav:hover {
+    background: #212121;
+}
+
+.divnav h2 {
+    font-size: 13px;
+    padding: 8px 2px 2px 2px;
+    margin: 2px;
+}
+
+.ulnav {
+    display: none;
+    margin-top: 18px;
+}
+
+.navigation {
+    float: left;
+    min-width: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.submenus {
+    position: absolute;
+    top: 28px;
+    min-width: 210px;
+    display: none;
+}
+
+.subhrefs {
+    display: block;
+    padding: 3px;
+    color: #000;
+    margin: 0px 5px 0px 5px;
+    font-size: 12px;
+    font-weight: bold;
+    background: #e5e5e5;
+    border-bottom: 1px solid #000;
+    text-decoration: none;
+}
+
+.subhrefs:hover {
+    color: #fff;
+    text-decoration: none;
+    background: #000;
+}
+
+.subhrefsnew {
+    display: block;
+    padding: 3px;
+    color: #000;
+    margin: 0px 5px 0px 5px;
+    font-size: 12px;
+    font-weight: bold;
+    background: url('../images/new.png') top right no-repeat #e5e5e5;
+    border-bottom: 1px solid #000;
+    text-decoration: none;
+}
+
+.subhrefsnew:hover {
+    color: #fff;
+    text-decoration: none;
+    background: url('../images/new.png') top right no-repeat #000;
+}
+
+.opis_div,
+.opis_right,
+.opis_sonnik {
+    margin-top: 10px;
+    display: block;
+    vertical-align: top;
+}
+
+.opis_div {
+    padding: 5px 5px 5px 5px;
+    background-color: #000;
+    position: relative;
+    z-index: 1;
+}
+
+.opis_right {
+    width: 500px;
+    margin-left: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.sub_opis {
+    display: block;
+    background-color: #000;
+    min-height: 300px;
+    color: #89989D;
+    position: relative;
+    padding: 5px;
+    z-index: 1;
+}
+
+.opis_sonnik {
+    max-width: 920px;
+    min-height: 200px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    width: 100%;
+}
+
+.sonnik_text a {
+    color: #B9BEC0;
+}
+
+.sonnik_text a:hover {
+    color: #fff;
+}
+
+.submenu {
+    width: 920px;
+    min-height: 30px;
+    background-color: #000;
+    margin: 10px 0px 10px 0px;
+}
+
+.taro_card_big {
+    position: absolute;
+    top: -30px;
+    left: -285px;
+    width: 216px;
+    height: 327px;
+    border: 2px solid #e5e5e5;
+    display: none;
+}
+
+h1 {
+    font-size: 18px;
+    color: #C5CDCF;
+    padding-left: 5px;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+h2 {
+    font-size: 16px;
+    color: #C5CDCF;
+    padding-left: 5px;
+}
+
+.ahref_about {
+    font-size: 16px;
+    color: #C5CDCF;
+    padding-left: 5px;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+    display: block;
+}
+
+h3 {
+    font-size: 15px;
+    color: #C5CDCF;
+}
+
+.subimg {
+    display: none;
+}
+
+img {
+    border: 0px;
+}
+
+input:focus {
+    outline: 0 none;
+}
+
+button:focus {
+    outline: 0 none;
+}
+
+select:focus {
+    outline: 0 none;
+}
+
+textarea:focus {
+    outline: 0 none;
+    resize: none;
+}
+
+.text {
+    color: #89989D;
+    padding: 0px 5px 7px 5px;
+}
+
+.startz:hover {
+    color: #89989D;
+}
+
+a {
+    color: #C5CDCF;
+}
+
+a:hover {
+    color: #e5e5e5;
+}
+
+strong {
+    color: #C5CDCF;
+}
+
+hr {
+    border: 0px;
+    margin: 5px 0px 15px 0px;
+    background: #444444;
+    height: 2px;
+}
+
+.litera {
+    display: inline-block;
+    margin: 4px 3px 4px 3px;
+    width: 20px;
+    height: 20px;
+    transition: all 0.8s ease;
+    border: 1px solid transparent;
+}
+
+.litera:hover {
+    transform: rotate(360deg);
+    border: 1px solid #fff;
+}
+
+.litera_name {
+    display: block;
+    margin: 4px 5px 4px 5px;
+    float: left;
+    width: 20px;
+    height: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    //text-decoration: underline;
+    text-align: center;
+    transition: all 0.8s ease;
+    border: 1px solid transparent;
+    border-bottom: 1px dotted #89989d;
+    position: relative;
+    z-index: 4;
+}
+
+.litera_name:hover {
+    transform: rotate(360deg);
+    border: 1px solid #fff;
+}
+
+.ac_results {
+    padding: 0px;
+    background: #fff;
+    color: #89989D;
+    overflow: hidden;
+}
+
+.hrefs,
+.name_hrefs {
+    display: inline-block;
+    padding: 0px 2px 0px 3px;
+    color: #fff;
+    margin: 2px 1px 2px 1px;
+    font-size: 12px;
+    font-weight: bold;
+    background: none;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: background 0.5s ease;
+    transition: color 0.5s ease;
+}
+
+.hrefs_hover {
+    display: inline-block;
+    padding: 0px 3px 0px 3px;
+    color: #000;
+    margin: 2px 1px 2px 1px;
+    font-size: 12px;
+    font-weight: bold;
+    background: #e5e5e5;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.5s ease;
+    transition: color 0.5s ease;
+}
+
+.hrefs:hover,
+.hrefs_hover:hover,
+.name_hrefs:hover {
+    color: #000;
+    text-decoration: none;
+    background: #e5e5e5;
+    transition: background 0.5s ease;
+    transition: color 0.5s ease;
+}
+
+.ac_results ul {
+    list-style-position: outside;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ac_results iframe {
+    display: none;
+    /*sorry for IE5*/
+    display/**/
+    : block;
+    /*sorry for IE5*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    filter: mask();
+    width: 3000px;
+    height: 3000px;
+}
+
+.ac_results li {
+    position: relative;
+    margin: 0px;
+    padding: 3px 0px 3px 0px;
+    cursor: pointer;
+    display: block;
+    font: menu;
+    font-size: 14px;
+    overflow: hidden;
+    z-index: 2;
+    background: #162747;
+    border-bottom: 1px solid #e5e5e5;
+    color: #fff;
+}
+
+.ac_results li:hover {
+    background: #e5e5e5;
+    color: #000;
+}
+
+.ac_loading {
+    background: url('../images/autocomplete_indicator.gif') right center no-repeat #fff;
+}
+
+.ac_over {
+    background: url('../images/px.png');
+    color: #89989D;
+}
+
+.three_card {
+    float: left;
+    margin: 0px 11px 5px 0px;
+    height: 97px;
+    width: 70px;
+    background: url(../images/kardssmall/rubashka.png) top left no-repeat;
+    cursor: pointer;
+}
+
+.three_card_taro {
+    float: left;
+    margin: 0px 11px 5px 0px;
+    height: 96px;
+    width: 62px;
+    background: url(../images/tarokardssmall/rubashka.png) top left no-repeat;
+    cursor: pointer;
+    border: 2px solid #616161;
+}
+
+.three_card_taro1 {
+    float: left;
+    margin: 0px 11px 5px 0px;
+    height: 96px;
+    width: 62px;
+    background: url(../images/tarokardssmall/rubashka.png) top left no-repeat;
+    border: 2px solid #616161;
+}
+
+.three_card_taro2 {
+    float: left;
+    margin: 0px 11px 5px 0px;
+    height: 96px;
+    width: 62px;
+    background: url(http://magya-online.ru/images/tarokardeteylla/rubashka.jpg) top left no-repeat;
+    border: 2px solid #616161;
+}
+
+.flinch {
+    float: left;
+    margin: 0px 10px 5px 0px;
+    height: 100px;
+    width: 65px;
+    background: url(../images/flinch/rubashka.png) top left no-repeat;
+    cursor: pointer;
+}
+
+.runi {
+    float: left;
+    margin: 0px 11px 5px 0px;
+    height: 70px;
+    width: 70px;
+    background: url(../images/runi/rubashka.png) top left no-repeat;
+    cursor: pointer;
+}
+
+.slava {
+    float: left;
+    margin: 0px 11px 5px 0px;
+    height: 101px;
+    width: 70px;
+    background: url(../images/slava/rubashka.png) top left no-repeat;
+    cursor: pointer;
+}
+
+.alfavit {
+    float: left;
+    margin: 0px 11px 5px 0px;
+    height: 70px;
+    width: 70px;
+    background: url(../images/alfavit/rubashka.png) top left no-repeat;
+    cursor: pointer;
+}
+
+.bumaga {
+    width: 150px;
+    height: 150px;
+    margin: 0px 11px 5px 0px;
+    float: left;
+    background: url(../images/bumaga/rubashka.png) top left no-repeat;
+    cursor: pointer;
+}
+
+.tkan {
+    width: 150px;
+    height: 150px;
+    margin: 0px 11px 5px 0px;
+    float: left;
+    background: url(../images/tkan/rubashka.png) top left no-repeat;
+    cursor: pointer;
+}
+
+.ekaterina {
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    float: left;
+    background: url(../images/ekaterina/rubashka.png) top left no-repeat;
+    cursor: pointer;
+}
+
+.cveti {
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    display: inline-block;
+    background: url(../images/cveti/rubashka.png) top left no-repeat;
+    cursor: pointer;
+}
+
+.russian {
+    width: 90px;
+    height: 90px;
+    margin: 4px;
+    float: left;
+    background: url(../images/russian/rubashka.png) top left no-repeat;
+    cursor: pointer;
+}
+
+.cifri {
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    float: left;
+    background: url(../images/cifri/rubashka.png) top left no-repeat;
+    cursor: pointer;
+}
+
+.berendei {
+    width: 96px;
+    height: 96px;
+    margin: 5px 12px 5px 12px;
+    float: left;
+    background: url(http://magya-online.ru/images/berendei/rubashka.png) top left no-repeat;
+    cursor: pointer;
+}
+
+.taro_card {
+    float: left;
+    margin: 0px 11px 5px 0px;
+    height: 104px;
+    width: 70px;
+    background: url(../images/taro/rubashka.png) top left no-repeat;
+    cursor: pointer;
+}
+
+.edinorog_card {
+    float: left;
+    margin: 0px 4px 4px 0px;
+    height: 93px;
+    width: 66px;
+    background: url(../images/edinorog/rubashka.png) top left no-repeat;
+    cursor: pointer;
+}
+
+.fei_card {
+    display: inline-block;
+    margin: 0px 4px 0px 0px;
+    height: 88px;
+    width: 66px;
+    background: url(../images/fei/rubashka.png) top left no-repeat;
+    cursor: pointer;
+}
+
+.arhangeli_card {
+    display: inline-block;
+    margin: 0px 4px 4px 0px;
+    height: 93px;
+    width: 66px;
+    background: url(../images/arhangeli/rubashka.png) top left no-repeat;
+    cursor: pointer;
+}
+
+.rezi_card {
+    float: left;
+    margin: 0px 4px 4px 0px;
+    height: 120px;
+    width: 66px;
+    background: url(../images/rezi/rubashka.png) top left no-repeat;
+    cursor: pointer;
+}
+
+.osho_card {
+    display: inline-block;
+    margin: 0px 3px 6px 3px;
+    height: 51px;
+    width: 34px;
+    background: url(../images/osho/rubashka.png) top left no-repeat;
+    cursor: pointer;
+}
+
+.angel_card {
+    display: inline-block;
+    margin: 0px 3px 6px 3px;
+    height: 51px;
+    width: 34px;
+    background: url(../images/taro_angels/rubashka.png) top left no-repeat;
+    cursor: pointer;
+}
+
+.taro_5_card {
+    display: inline-block;
+    margin: 0px 3px 6px 3px;
+    height: 61px;
+    width: 34px;
+    background: url(../images/taro_5/rubashka.png) top left no-repeat;
+    cursor: pointer;
+}
+
+.endora_card {
+    float: left;
+    margin: 0px 3px 3px 0px;
+    height: 110px;
+    width: 66px;
+    background: url(../images/endora/rubashka.png) top left no-repeat;
+    cursor: pointer;
+}
+
+.cigan_card {
+    float: left;
+    margin: 0px 7px 3px 7px;
+    height: 103px;
+    width: 66px;
+    background: url(../images/cigan/small/rubashka.png) top left no-repeat;
+    cursor: pointer;
+}
+
+.domino_card {
+    float: left;
+    margin: 0px 11px 5px 0px;
+    height: 98px;
+    width: 50px;
+    background: url(../images/domino/rubashka.png) top left no-repeat;
+    cursor: pointer;
+}
+
+.taro_card_all {
+    float: left;
+    margin: 0px 6px 5px 0px;
+    height: 51px;
+    width: 34px;
+    background: url(../images/tarosmall/rubashka.png) top left no-repeat;
+    cursor: pointer;
+}
+
+.taro_card_manara {
+    display: inline-block;
+    margin: 0px 6px 5px 0px;
+    height: 51px;
+    width: 34px;
+    background: url(../images/taro_manara/small1/rubashka.jpg) top left no-repeat;
+    cursor: pointer;
+}
+
+.mihail_card_all {
+    float: left;
+    margin: 0px 6px 5px 0px;
+    height: 51px;
+    width: 34px;
+    background: url(../images/mihail/rubashka.png) top left no-repeat;
+    cursor: pointer;
+}
+
+.liticia_cards {
+    float: left;
+    margin: 0px 10px 5px 0px;
+    height: 96px;
+    width: 71px;
+    background: url(../images/liticia/rubashka.gif) top left no-repeat;
+    cursor: pointer;
+}
+
+.moojong {
+    float: left;
+    margin: 0px 10px 5px 0px;
+    height: 60px;
+    width: 30px;
+    background: url(../images/moojong/rubashka.png) top left no-repeat;
+    cursor: pointer;
+}
+
+#mod {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -300px;
+    z-index: 7;
+    display: none;
+    margin-right: 0px;
+    background: none;
+}
+
+#black {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 6;
+    display: none;
+    background: rgba(0, 0, 0, 0.7);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#AA000000, endColorstr=#AA000000);
+    zoom: 1;
+}
+
+#close {
+    background: url("../images/mod_close.png") top center no-repeat;
+    position: absolute;
+    right: 0;
+    width: 44px;
+    height: 44px;
+    margin-top: -27px;
+    margin-right: -27px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.dialog {
+    cursor: pointer;
+}
+
+.mod_tl {
+    background: url("../images/mod_tl.png");
+    width: 25px;
+    height: 25px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.mod_tr {
+    background: url("../images/mod_tr.png");
+    width: 25px;
+    height: 25px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.mod_bl {
+    background: url("../images/mod_bl.png");
+    width: 25px;
+    height: 25px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.mod_br {
+    background: url("../images/mod_br.png");
+    width: 25px;
+    height: 25px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.mod_l {
+    background: url("../images/mod_l.png");
+    width: 25px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.mod_r {
+    background: url("../images/mod_r.png");
+    width: 25px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.mod_t {
+    background: url("../images/mod_t.png");
+    height: 25px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.mod_b {
+    background: url("../images/mod_b.png");
+    height: 25px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.mod_c {
+    background: url("../images/mod_c.png");
+    vertical-align: middle;
+    margin: 0px;
+    padding: 0px;
+}
+
+.m {
+    display: none;
+}
+
+.navigat {
+    background: #28282B;
+    font-weight: bold;
+    color: #C5CDCF;
+    box-shadow: 0px 4px 4px #6E6D6D;
+    border-radius: 5px;
+    display: table;
+    margin: auto;
+}
+
+.nav_table {
+    text-align: center;
+    margin: auto;
+}
+
+.next_page {
+    float: right;
+    padding: 7px 0px 7px 0px;
+}
+
+.prev_page {
+    float: left;
+    padding: 7px 0px 7px 0px;
+}
+
+.block_nav {
+    margin: 0px 0px 0px 0px;
+}
+
+.active_nav,
+.noactive_nav,
+.etc {
+    float: left;
+    padding: 2px 10px 2px 10px;
+    text-align: center;
+    font-weight: bold;
+    background: none;
+}
+
+.active_nav {
+    color: #fff;
+}
+
+.etc {
+    color: #fff;
+}
+
+.text_block {
+    min-height: 60px;
+    border-bottom: 1px solid #333;
+    padding: 5px 10px 5px 10px;
+    margin: 5px 10px 5px 10px;
+}
+
+.text_img {
+    float: left;
+    margin: 0px 12px 5px 0px;
+    width: 70px;
+}
+
+.text_zag a {
+    margin: 0px 0px 5px 0px;
+    font-size: 14px;
+}
+
+.text_opis {
+    margin: 5px 0px 10px 0px;
+}
+
+.text_razdel {
+    width: 64px;
+    text-align: center;
+    margin: 2px 0px 0px 1px;
+    position: relative;
+    z-index: 5;
+    font-size: 9px;
+    height: 57px;
+    background: #2D2929;
+    padding-top: 2px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.text_razdel:hover {
+    background: #222C71;
+}
+
+.text_rand {
+    max-width: 200px;
+    float: right;
+}
+
+.zod_link a {
+    color: #A597EB;
+    position: relative;
+    z-index: 3;
+}
+
+.kc_title {
+    margin-top: 18px;
+    padding: 0px 0px 15px 10px;
+    font-style: italic;
+    color: #A597EB;
+}
+
+.a_list {
+    display: block;
+    min-width: 120px;
+    min-height: 25px;
+    background: url(../images/sni.png) 5px 2px no-repeat;
+    padding-left: 25px;
+    margin-bottom: 5px;
+}
+
+.atable tr td {
+    border: 1px solid #89989D;
+    padding: 5px;
+    margin: 2px;
+}
+
+
+/* Число года рождения */
+
+.udate {
+    padding: 5px 5% 2px 5%;
+    margin: 5%;
+    text-align: center;
+    width: 80%;
+    border: 0;
+    background: #1B2326;
+    color: #89989D;
+    display: table;
+    font-size: 12px;
+    padding-bottom: 7px;
+}
+
+.sdate {
+    padding: 4px 5% 4px 5%;
+    margin: 5%;
+    text-align: center;
+    cursor: pointer;
+    width: 80%;
+    border: 0;
+    background: #538596;
+    color: #fff;
+    display: table;
+    font-size: 12px;
+}
+
+.sdate:hover {
+    background: #777;
+    color: #fff;
+}
+
+.resdate {
+    height: 37px;
+    display: table;
+    margin: auto;
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+.reskard {
+    display: table;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.mainimg {
+    float: left;
+    width: 130px;
+    height: 100px;
+    margin-right: 7px;
+    transition: all 0.5s ease;
+}
+
+.mainimg:hover {
+    transform: scale(1.2);
+}
+
+.smallimg {
+    float: left;
+    width: 70px;
+    height: 39px;
+    margin-right: 7px;
+    transition: all 0.5s ease;
+}
+
+.smallimg:hover {
+    transform: scale(1.2);
+}
+
+.logoimg {
+    float: left;
+    width: 70px;
+    height: 70px;
+    margin-right: 7px;
+    transition: all 0.8s ease;
+}
+
+.logoimg:hover {
+    transform: rotate(360deg);
+}
+
+.runi_list img {
+    transition: all 0.8s ease;
+}
+
+.runi_list img:hover {
+    transform: rotate(360deg);
+}
+
+.tahanor {
+    float: left;
+    margin: 0px 11px 5px 0px;
+    height: 98px;
+    width: 67px;
+    background: url(../images/tahanor/rubashka.png) top left no-repeat;
+    cursor: pointer;
+}
+
+.tahanor_res {
+    display: table;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 160px;
+    height: 105px;
+    padding: 10px 5px 5px 20px;
+    border: 1px solid #4A4A4A;
+    border-radius: 10px;
+    background: url(../images/tahanor/tahanor_res.gif) top left no-repeat;
+    -moz-background-size: 100%;
+    /* Firefox 3.6+ */
+    -webkit-background-size: 100%;
+    /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%;
+    /* Opera 9.6+ */
+    background-size: 100%;
+}
+
+.litres {
+    color: #89989D;
+    border: 1px solid #2F2F2F;
+    border-radius: 5px;
+    display: table;
+    padding: 0px 10px 0px 10px;
+    font-size: 11px;
+}
+
+.litres h3 {
+    font-size: 15px;
+    font-size: 12px;
+}
+
+.litres_r {
+    width: 80px;
+    margin: 10px 2px 10px 2px;
+    float: left;
+    position: relative;
+}
+
+.litres_name {
+    padding: 5px 2px 5px 0px;
+    font-size: 10px;
+}
+
+.litres_r img {
+    width: 80px;
+    height: 110px;
+}
+
+.numerologiya_button,
+.numerologiya_input {
+    font-family: Comic Sans MS;
+}
+
+.numerologiya_button {
+    width: 246px;
+    color: #000;
+    font-size: 17px;
+    text-align: center;
+    background: url('images/numerologiya_button.png') top left no-repeat;
+    display: table;
+    margin: auto;
+    height: 51px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.numerologiya_button div {
+    display: table-cell;
+    height: 51px;
+    vertical-align: middle;
+}
+
+.numerologiya_input {
+    border-radius: 22px;
+    -moz-border-radius: 22px;
+    -webkit-border-radius: 22px;
+    text-align: center;
+    display: table;
+    margin: auto;
+    width: 244px;
+    padding: 10px 0px 10px 0px;
+    background: #464646;
+    color: #fff;
+    border: 2px solid #D5D5D5;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.numerologiya_button:hover {
+    color: #2B2646;
+}
+
+.numerologiya_text {
+    max-width: 450px;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.numerologiya_text ul {
+    display: table;
+    margin: auto;
+    font-weight: bold;
+    color: #ADADAD;
+}
+
+.numerologiya_bg {
+    width: 100%;
+    min-height: 247px;
+    background: url('images/numerologiya_bg.png') top center no-repeat;
+}
+
+.shcetchiki div {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    -webkit-filter: grayscale(100%);
+}
+
+.shcetchiki div:hover {
+    -webkit-filter: grayscale(0%);
+}
+
+.t_m {
+    width: 100%;
+    max-width: 920px;
+    min-height: 30px;
+    background: url('../images/px.png');
+    margin: 0px 0px 10px 0px;
+}
+
+.r_mob {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#slidemenu {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    cursor: pointer;
+    z-index: 200;
+    width: 30px;
+    height: 30px;
+}
+
+.change_version {
+    background: #000;
+    margin: 0px 10px 10px 0px;
+    display: table;
+    float: right;
+    color: #e5e5e5;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #e5e5e5;
+}
+
+.social {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    z-index: 4;
+    text-align: right;
+    line-height: 1.5em;
+}
+
+.mobile_menu,
+.mobile_submenu {
+    display: none;
+}
+
+.t_m {
+    display: block;
+}
+
+.t_m_zag {
+    display: none;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.headers {
+    width: 920px;
+}
+
+@media (min-device-width:940px) {
+    .change_version {
+        display: none;
+    }
+}
+
+#commentform,
+#addcommentform,
+#error,
+#shown {
+    color: #e5e5e5;
+    padding: 5px;
+    background-color: #000;
+    cursor: pointer;
+    margin: 10px auto;
+    max-width: 490px;
+    text-align: center;
+}
+
+.shownext_all {
+    padding: 7px 8px 7px 12px;
+    background-color: #000;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#commentform input {
+    font-size: 13px;
+    width: 100%;
+    border: 0;
+    margin: 2px 0px 2px 0px;
+    background: #1B2326;
+    color: #89989D;
+}
+
+#commentform textarea {
+    font-size: 13px;
+    font-family: Arial;
+    width: 100%;
+    height: 75px;
+    border: 0;
+    margin: 2px 0px 2px 0px;
+    padding: 0;
+    background: #1B2326;
+    color: #89989D;
+}
+
+#addcommentform,
+#shown {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.rating_plus {
+    display: table;
+    padding: 5px 10px 5px 5px;
+    background-color: #000;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.r_mob {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+@media (max-device-width:760px) {
+    .r_mob {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+}
+
+.social_group {
+    background: #0F0E0E;
+    border-radius: 25px;
+    box-shadow: 2px 2px #2E2929;
+    width: 90%;
+    margin: auto;
+    padding: 5px 1%;
+    margin-bottom: 10px;
+}
+
+.input_checkbox {
+    min-height: 24px;
+    padding-left: 30px;
+    background: url(images/input_checkbox1.png) center left no-repeat;
+    cursor: pointer;
+    margin: 8px 0px 8px 15px;
+    color: #c5c5c5;
+}
+
+.input_checkbox:hover {
+    color: #3AB470;
+}
+
+.testi_shkala {
+    width: 400px;
+    height: 50px;
+    display: table;
+    margin: 0px auto 15px auto;
+    background: url(images/testi_shkala.jpg) top left no-repeat;
+    position: relative;
+}
+
+.shkala_metka {
+    position: absolute;
+    top: 10px;
+    width: 26px;
+    height: 23px;
+    background: #19a6d2;
+    border: 2px solid #000;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    color: #000;
+    text-align: center;
+    padding-top: 3px;
+    font-size: 12px;
+}
